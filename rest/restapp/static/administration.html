@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Food Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #243b55, #141e30);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background: #243b55;
+            margin: 0;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00a8cc;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        #administration {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #administration h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #243b55;
+        }
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .member {
+            background-color: #e0f7fa; /* Light teal background for member cards */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            flex: 1 1 calc(25% - 40px); /* 4 items per row, with 20px gap */
+            max-width: 250px; /* Limit the width */
+        }
+        .member:hover {
+            transform: translateY(-5px);
+        }
+        .member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .member h3 {
+            font-size: 1.5em;
+            color: #243b55;
+        }
+        .member p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        footer {
+            background: #141e30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Administration - Taste Of Italy</h1>
+        <p>Meet our dedicated team members!</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="administration">
+            <h2>Meet Our Team</h2>
+
+            <div class="members">
+                <div class="member">
+                    <img src="mem1.jpg" alt="Celebrity 1">
+                    <h3>Chris Hemsworth</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="member">
+                    <img src="mem2.jpg" alt="Celebrity 2">
+                    <h3>Ryan Reynolds</h3>
+                    <p>Marketing Director</p>
+                </div>
+                <div class="member">
+                    <img src="mem3.jpg" alt="Celebrity 3">
+                    <h3>Robert Downey Jr.</h3>
+                    <p>Operations Manager</p>
+                </div>
+                <div class="member">
+                    <img src="mem4.jpg" alt="Celebrity 4">
+                    <h3>Tom Hiddleston</h3>
+                    <p>Chef & Head Cook</p>
+                </div>
+                <div class="member">
+                    <img src="mem5.jpg" alt="Celebrity 5">
+                    <h3>Tom Cruise</h3>
+                    <p>Customer Relations</p>
+                </div>
+                <div class="member">
+                    <img src="mem6.jpg" alt="Celebrity 6">
+                    <h3>Brad Pitt</h3>
+                    <p>Executive Chef</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Food Delight. All Rights Reserved.</p>
+        <p>Website created by Harshul SL</p>
+    </footer>
+</body>
+</html>

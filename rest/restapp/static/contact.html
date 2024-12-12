@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #243b55, #141e30);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background: #243b55;
+            margin: 0;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00a8cc;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        #contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #243b55;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .contact-info div {
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: 300px;
+            margin: 10px;
+        }
+        .contact-info div i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #243b55;
+        }
+        .contact-info div h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .contact-info div p {
+            font-size: 1em;
+            color: #666;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #e0f7fa; /* Light teal background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #243b55;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #141e30;
+        }
+        footer {
+            background: #141e30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us - Taste Of Italy</h1>
+        <p>We'd love to hear from you! Reach out to us using the form below.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>123 Food Street, Thirumullaivoyal, Ch 600062</p>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>+1 (123) 456-7890</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@fooddelight.com</p>
+                </div>
+            </div>
+
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Food Delight. All Rights Reserved.</p>
+        <p>Website created by HARSHUL SL</p>
+    </footer>
+
+    
+</body>
+</html>

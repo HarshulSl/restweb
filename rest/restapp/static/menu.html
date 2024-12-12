@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #243b55, #141e30);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background: #243b55;
+            margin: 0;
+            padding: 30px;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00a8cc;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        #menu {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #menu h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #243b55;
+        }
+        .menu-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            background-color: #e0f7fa; /* Light teal background for menu items */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 5px;
+            transition: transform 0.3s;
+            flex: 1 1 calc(25% - 20px); /* 4 items in a row with 20px gap */
+            max-width: 300px; /* Limit the width */
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item img {
+            width: 100%;
+            aspect-ratio: 3 / 4; /* Maintain 3:4 ratio */
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .menu-item h3 {
+            margin-top: 5px;
+            font-size: 1.2em;
+            color: #243b55;
+        }
+        .menu-item p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+        .menu-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu-row > div {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        footer {
+            background: #141e30;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+
+            <div class="menu-row">
+                <div class="menu-item">
+                    <img src="dish5.jpg" alt="Dish 5">
+                    <h3>Chicken Alfredo</h3>
+                    <p>Creamy Alfredo sauce with grilled chicken on fettuccine pasta.</p>
+                    <p>Price: ₹1,700</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish6.jpg" alt="Dish 6">
+                    <h3>Veggie Stir-fry</h3>
+                    <p>Stir-fried seasonal vegetables with soy sauce and a hint of garlic.</p>
+                    <p>Price: ₹1,300</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish7.jpg" alt="Dish 7">
+                    <h3>Beef Burger</h3>
+                    <p>Juicy beef patty with lettuce, tomato, and cheese in a toasted bun.</p>
+                    <p>Price: ₹1,600</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish8.jpg" alt="Dish 8">
+                    <h3>Thai Green Curry</h3>
+                    <p>Traditional Thai green curry with chicken, vegetables, and coconut milk.</p>
+                    <p>Price: ₹1,900</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish9.jpg" alt="Dish 9">
+                    <h3>Beef Tacos</h3>
+                    <p>Soft tortillas filled with seasoned beef, salsa, and cheese.</p>
+                    <p>Price: ₹1,500</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish10.jpg" alt="Dish 10">
+                    <h3>Grilled Vegetables</h3>
+                    <p>Freshly grilled vegetables served with a balsamic reduction.</p>
+                    <p>Price: ₹1,400</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish11.jpg" alt="Dish 11">
+                    <h3>Classic Tiramisu</h3>
+                    <p>Layered Italian dessert with mascarpone, coffee, and cocoa.</p>
+                    <p>Price: ₹800</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish12.jpg" alt="Dish 12">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Rich chocolate cake with a gooey center, served with vanilla ice cream.</p>
+                    <p>Price: ₹900</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish13.jpg" alt="Dish 13">
+                    <h3>Vegetarian Quesadilla</h3>
+                    <p>Cheese and vegetable-filled quesadilla served with guacamole and sour cream.</p>
+                    <p>Price: ₹1,400</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish14.jpg" alt="Dish 14">
+                    <h3>Beef Empanadas</h3>
+                    <p>Flaky pastry filled with spiced beef, served with a tangy dipping sauce.</p>
+                    <p>Price: ₹1,200</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish15.jpg" alt="Dish 15">
+                    <h3>Seafood Paella</h3>
+                    <p>Spanish rice dish with shrimp, mussels, and clams, infused with saffron.</p>
+                    <p>Price: ₹2,200</p>
+                </div>
+                <div class="menu-item">
+                    <img src="dish16.jpg" alt="Dish 16">
+                    <h3>Mango Sticky Rice</h3>
+                    <p>Sweet and creamy dessert with fresh mango, sticky rice, and coconut milk.</p>
+                    <p>Price: ₹700</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Food Delight. All Rights Reserved.</p>
+        <p>Website created by Harshul SL</p>
+    </footer>
+</body>
+</html>

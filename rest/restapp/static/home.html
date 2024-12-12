@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Italy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #243b55, #141e30);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background: #243b55;
+            margin: 0;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00a8cc;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        #home {
+            background: url('back.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 60px 20px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        #home::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: 0;
+        }
+        #home h2, #home p, #home .cta-buttons {
+            position: relative;
+            z-index: 1;
+        }
+        #home h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        #home p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .cta-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #00a8cc;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .cta-buttons a:hover {
+            background-color: #005f73;
+        }
+        
+        .featured-dishes {
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1200px;
+        }
+        .dish, .opening-hours {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .dish:hover, .opening-hours:hover {
+            transform: translateY(-5px);
+        }
+        .dish {
+            background-color: #005f73; 
+        }
+        .opening-hours {
+            background-color: #ffe0b2;
+        }
+        .dish img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .dish h4, .opening-hours h4 {
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: #243b55;
+        }
+        .opening-hours h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #141e30;
+        }
+        .opening-hours p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Taste of Italy</h1>
+        <p>Your Culinary Journey Starts Here</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Website</h2>
+            <p>Experience the best food and exceptional service in a cozy and inviting atmosphere. Explore our menu and discover your next favorite dish!</p>
+            <div class="cta-buttons">
+                <a href="menu.html">Explore Menu</a>
+                <a href="contact.html">Reserve a Table</a>
+            </div>
+        </section>
+
+        <h2>Today's Special</h2>
+
+        <section class="featured-dishes">
+            <div class="dish">
+                <img src="dish1.jpg" alt="Dish 1">
+                <h4 style="color: #f4f4f4;">Spaghetti Carbonara</h4>
+                <p style="color: #f4f4f4;">A classic Italian pasta dish with creamy egg sauce, pancetta, and Parmesan cheese. Perfect for a cozy dinner!</p>
+            </div>
+            <div class="dish">
+                <img src="dish2.jpg" alt="Dish 2">
+                <h4 style="color: #f4f4f4;">Grilled Salmon</h4>
+                <p style="color: #f4f4f4;">Succulent grilled salmon served with a fresh lemon herb butter sauce. A healthy and delicious choice!</p>
+            </div>
+            <div class="opening-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Food Delight. All Rights Reserved.</p>
+        <p>Website created by Harshul SL</p>
+    </footer>
+</body>
+</html>
